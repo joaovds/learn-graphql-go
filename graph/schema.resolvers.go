@@ -31,16 +31,16 @@ func (r *categoryResolver) Courses(ctx context.Context, obj *model.Category) ([]
 
 // Category is the resolver for the category field.
 func (r *courseResolver) Category(ctx context.Context, obj *model.Course) (*model.Category, error) {
-  category, err := r.CategoryDB.GetByCourseID(obj.ID)
-  if err != nil {
-    return nil, err
-  }
+	category, err := r.CategoryDB.GetByCourseID(obj.ID)
+	if err != nil {
+		return nil, err
+	}
 
-  return &model.Category{
-    ID:          category.ID,
-    Name:        category.Name,
-    Description: &category.Description,
-  }, nil
+	return &model.Category{
+		ID:          category.ID,
+		Name:        category.Name,
+		Description: &category.Description,
+	}, nil
 }
 
 // CreateCategory is the resolver for the createCategory field.

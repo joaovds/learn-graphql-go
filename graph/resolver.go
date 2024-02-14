@@ -6,7 +6,7 @@ import "github.com/joaovds/learn-graphql-go/internal/db"
 //
 // It serves as dependency injection for your app, add any dependencies you require here.
 
-type Resolver struct{
-  CategoryDB *db.Category
-  CourseDB *db.Course
+type Resolver struct {
+	CategoryDB *db.Category
+	CourseDB   *db.Course
 }
