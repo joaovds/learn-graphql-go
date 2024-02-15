@@ -24,7 +24,7 @@
    ```bash
    git clone https://github.com/joaovds/learn-graphql-go
 
-   cd gotterChat-backend
+   cd learn-graphql-go
    ```
 
 2. Instale as dependências:
